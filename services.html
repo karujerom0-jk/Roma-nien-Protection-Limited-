@@ -1,13 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Services | Romanien Protection Limited</title>
-    <meta name="description" content="Comprehensive facility, protective operations and technology-supported security services from Romanien Protection Limited in Papua New Guinea.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Roma-Nien Protection Limited professional security services in Papua New Guinea, including authorised armed escort.">
+<meta name="theme-color" content="#071a36">
+<title>Security Services | Roma-Nien Protection Limited</title>
+
+<style>
+:root{
+--navy:#071a36;
+--blue:#12345b;
+--gold:#d7ad32;
+--ink:#172536;
+--muted:#5c6b7d;
+--paper:#f4f6f9;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--ink);
+background:var(--paper);
+line-height:1.65;
+}
+a{text-decoration:none}
+
+.topbar{
+background:#030d1c;
+color:#dbe4ef;
+padding:9px 6%;
+font-size:13px;
+display:flex;
+justify-content:space-between;
+gap:10px;
+flex-wrap:wrap;
+}
+
+header{
+background:var(--navy);
+color:white;
+padding:14px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+border-bottom:3px solid var(--gold);
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:13px;
+color:white;
+font-weight:800;
+letter-spacing:.5px;
+}
+
+.brand-mark{
+width:58px;
+height:58px;
+display:grid;
+place-items:center;
+border-radius:50%;
+background:white;
+color:var(--navy);
+border:3px solid var(--gold);
+font-size:30px;
+font-weight:900;
+}
+
+.brand small{
+display:block;
+color:var(--gold);
+font-size:11px;
+letter-spacing:1.4px;
+}
+
+nav{
+display:flex;
+gap:19px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+font-size:14px;
+font-weight:700;
+}
+
+nav a:hover{color:var(--gold)}
+
+.hero{
+background:linear-gradient(120deg,rgba(7,26,54,.97),rgba(18,52,91,.91)),
+url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=85') center/cover;
+color:white;
+padding:68px 6%;
+}
+
+.hero-inner{
+max-width:1180px;
+margin:auto;
+}
+
+.eyebrow{
+color:var(--gold);
+font-size:12px;
+font-weight:800;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.hero h1{
+font-size:clamp(36px,5vw,60px);
+line-height:1.08;
+margin:12px 0;
+}
+
+.hero p{
+font-size:18px;
+color:#d9e3ee;
+max-width:800px;
+}
+
+.hero-actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:var(--gold);
+color:#13243a;
+font-weight:800;
+border-radius:5px;
+}
+
+.btn.outline{
+background:transparent;
+border:1px solid var(--gold);
+color:white;
+}
+
+.wrap{
+max-width:1180px;
+margin:auto;
+padding:52px 22px;
+}
+
+.intro{
+text-align:center;
+max-width:820px;
+margin:0 auto 28px;
+}
+
+h2{
+font-size:clamp(27px,3vw,36px);
+color:var(--navy);
+line-height:1.2;
+}
+
+.lead{
+color:var(--muted);
+font-size:17px;
+}
+
+.slideshow{
+background:#06172c;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 16px 40px rgba(5,22,43,.17);
+}
+
+.slideshow img{
+display:block;
+width:100%;
+height:clamp(260px,54vw,590px);
+object-fit:cover;
+}
+
+.caption{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:12px;
+padding:15px 19px;
+background:#06172c;
+color:#d7e1ed;
+}
+
+.caption strong{
+color:var(--gold);
+font-size:17px;
+}
+
+.slide-controls{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.slide-controls button{
+background:transparent;
+border:1px solid #718096;
+color:white;
+border-radius:4px;
+padding:7px 11px;
+cursor:pointer;
+}
+
+.dots{
+display:flex;
+justify-content:center;
+gap:10px;
+padding:14px;
+background:#0b2340;
+}
+
+.dot{
+width:11px;
+height:11px;
+border:0;
+border-radius:50%;
+background:#8291a5;
+cursor:pointer;
+}
+
+.dot[aria-current="true"]{
+background:var(--gold);
+transform:scale(1.25);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:28px;
+}
+
+.card{
+background:white;
+border:1px solid #e1e7ee;
+border-top:4px solid var(--gold);
+border-radius:9px;
+padding:23px;
+box-shadow:0 8px 25px rgba(7,26,54,.05);
+}
+
+.card h3{
+color:var(--navy);
+font-size:19px;
+}
+
+.card p{
+color:var(--muted);
+font-size:15px;
+}
+
+.card-icon{
+font-size:30px;
+}
+
+.escort{
+margin-top:32px;
+padding:32px;
+background:var(--navy);
+border-radius:12px;
+color:white;
+}
+
+.escort h2{color:white}
+.escort p{color:#dbe4ef}
+
+.notice{
+margin-top:24px;
+padding:18px 20px;
+background:#fff6dd;
+border-left:4px solid var(--gold);
+color:#57491f;
+font-size:14px;
+}
+
+.contact{
+background:#061528;
+color:white;
+text-align:center;
+padding:44px 20px;
+}
+
+.contact h2{color:white}
+.contact p{color:#d9e2ec}
+.contact a{color:var(--gold);font-weight:700}
+
+footer{
+background:#030d1c;
+color:#bac7d5;
+text-align:center;
+padding:20px;
+font-size:13px;
+}
+
+@media(max-width:820px){
+header{
+align-items:flex-start;
+flex-direction:column;
+}
+.grid{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:560px){
+.grid{grid-template-columns:1fr}
+.caption{
+align-items:flex-start;
+flex-direction:column;
+}
+.hero{padding:48px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<span>Professional Security Services · Papua New Guinea</span>
+<span>+675 7347 5422 · ismaelkaru@gmail.com</span>
+</div>
+
+<header>
+
+<a class="brand" href="./index.html">
+<span class="brand-mark">R</span>
+<span>
+ROMA-NIEN PROTECTION LIMITED
+<small>PROTECTION WITH PURPOSE</small>
+</span>
+</a>
+
+<nav aria-label="Main navigation">
+<a href="./index.html">Home</a>
+<a href="./about.html">About Us</a>
+<a href="./services.html">Services</a>
+<a href="./values.html">Our Values</a>
+<a href="./contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<div class="hero-inner">
+
+<div class="eyebrow">Professional Protection · Papua New Guinea</div>
+
+<h1>Security Services You Can Rely On</h1>
+
+<p>
+Roma-Nien Protection Limited delivers professional security support for people, businesses, facilities and valuable assets. Our approach is built on vigilance, integrity, discipline and responsible service.
+</p>
+
+<div class="hero-actions">
+<a class="btn" href="#services">Explore Our Services</a>
+<a class="btn outline" href="#contact">Contact Us</a>
+</div>
+
+</div>
+</section>
+
+<main>
+
+<section class="wrap">
+
+<div class="intro">
+<div class="eyebrow">Our Operations</div>
+<h2>Five Security Service Capabilities</h2>
+<p class="lead">
+Explore our security operations. Images automatically change every three seconds.
+</p>
+</div>
+
+<div class="slideshow">
+
+<img id="slideImage"
+src="https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1600&q=85"
+alt="Professional security services">
+
+<div class="caption">
+
+<div>
+<strong id="slideTitle">Professional Guarding Services</strong>
+<div id="slideText">Site protection and access monitoring.</div>
+</div>
+
+<div class="slide-controls">
+<button type="button" id="previousSlide">❮</button>
+<span id="slideCount">1 / 5</span>
+<button type="button" id="nextSlide">❯</button>
+<button type="button" id="pauseSlide">Pause</button>
+</div>
+
+</div>
+
+<div class="dots" id="slideDots"></div>
+
+</div>
+
+</section>
+
+<section class="wrap" id="services">
+
+<div class="intro">
+<div class="eyebrow">What We Provide</div>
+<h2>Our Security Services</h2>
+<p class="lead">
+Professional security solutions designed around our clients' needs.
+</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<div class="card-icon">🛡️</div>
+<h3>1. Professional Guarding Services</h3>
+<p>
+Uniformed security presence, entry-point observation, visitor procedures, incident reporting and protection of approved premises.
+</p>
+</article>
+
+<article class="card">
+<div class="card-icon">🚚</div>
+<h3>2. Cash-in-Transit Security</h3>
+<p>
+Security support for the planned movement of cash and other valuables, subject to client procedures and required approvals.
+</p>
+</article>
+
+<article class="card">
+<div class="card-icon">👔</div>
+<h3>3. VIP & Executive Escort</h3>
+<p>
+Professional escort coordination and protective support for executives, visitors and clients during approved movements.
+</p>
+</article>
+
+<article class="card">
+<div class="card-icon">🏗️</div>
+<h3>4. Commercial & Asset Escort</h3>
+<p>
+Escort and security coordination for business assets, equipment, commercial deliveries and authorised movements.
+</p>
+</article>
+
+<article class="card">
+<div class="card-icon">🎟️</div>
+<h3>5. Event & Specialised Escort</h3>
+<p>
+Security planning, access support, crowd-safety coordination and escort services for approved events.
+</p>
+</article>
+
+<article class="card">
+<div class="card-icon">📹</div>
+<h3>Site Monitoring & Patrol Support</h3>
+<p>
+Observation, scheduled patrol support and reporting to help clients protect their facilities.
+</p>
+</article>
+
+</div>
+
+<section class="escort" id="armed-escort">
+
+<div class="eyebrow">Specialised Capability</div>
+
+<h2>Armed Escort Services</h2>
+
+<p>
+Roma-Nien Protection Limited can discuss armed escort requirements for eligible, approved assignments where the service is lawful and appropriately authorised.
+</p>
+
+<p>
+Any armed personnel, equipment, deployment and operating procedures must comply with Papua New Guinea law, licensing requirements and relevant authority approvals.
+</p>
+
+<p>
+Each request is subject to client consultation, documented risk assessment, verification of legal authorisations and confirmation that the assignment can be delivered safely and responsibly.
+</p>
+
+<a class="btn" href="#contact">Enquire About Armed Escort</a>
+
+</section>
+
+<div class="notice">
+<strong>Important Compliance Statement:</strong>
+All services are subject to applicable Papua New Guinea laws, required licences, permits, insurance, client agreements and operational approvals. Armed escort services are provided only where legally permitted and properly authorised.
+</div>
+
+</section>
+
+</main>
+
+<section class="contact" id="contact">
+
+<div class="eyebrow">Speak With Our Team</div>
+
+<h2>Your Security Is Our Responsibility.</h2>
+
+<p>
+Contact Director Ismael Karu to discuss your security requirements.
+</p>
+
+<p><strong>Director: Ismael Karu</strong></p>
+
+<p>
+Phone:
+<a href="tel:+67573475422">+675 7347 5422</a>
+|
+Email:
+<a href="mailto:ismaelkaru@gmail.com">ismaelkaru@gmail.com</a>
+</p>
+
+<p>
+<a href="https://wa.me/67573475422" target="_blank" rel="noopener">
+Contact us on WhatsApp
+</a>
+</p>
+
+</section>
+
+<footer>
+© <span id="year"></span> ROMA-NIEN PROTECTION LIMITED.
+All Rights Reserved. Papua New Guinea.
+</footer>
+
+<script>
+
+const slides = [
+
+{
+image:"https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1600&q=85",
+title:"Professional Guarding Services",
+text:"Visible security presence, access monitoring and site protection."
+},
+
+{
+image:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1600&q=85",
+title:"Cash-in-Transit Security",
+text:"Planned security support for cash and valuables."
+},
+
+{
+image:"https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=85",
+title:"VIP & Executive Escort",
+text:"Professional escort coordination for executives and visitors."
+},
+
+{
+image:"https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1600&q=85",
+title:"Commercial & Asset Escort",
+text:"Security coordination for commercial assets and equipment."
+},
+
+{
+image:"https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=85",
+title:"Event & Specialised Escort",
+text:"Event security planning and crowd-safety coordination."
+}
+
+];
+
+let currentSlide = 0;
+let timer = null;
+let isPaused = false;
+
+const image = document.getElementById("slideImage");
+const title = document.getElementById("slideTitle");
+const description = document.getElementById("slideText");
+const count = document.getElementById("slideCount");
+const dots = document.getElementById("slideDots");
+const pauseButton = document.getElementById("pauseSlide");
+
+function showSlide(index){
+
+currentSlide = (index + slides.length) % slides.length;
+
+const slide = slides[currentSlide];
+
+image.src = slide.image;
+image.alt = slide.title;
+
+title.textContent = slide.title;
+description.textContent = slide.text;
+
+count.textContent =
+(currentSlide + 1) + " / " + slides.length;
+
+[...dots.children].forEach((dot,i)=>{
+dot.setAttribute(
+"aria-current",
+i === currentSlide ? "true" : "false"
+);
+});
+
+}
+
+slides.forEach((slide,index)=>{
+
+const dot = document.createElement("button");
+
+dot.type = "button";
+dot.className = "dot";
+
+dot.setAttribute(
+"aria-label",
+"Show slide " + (index + 1)
+);
+
+dot.addEventListener("click",()=>{
+showSlide(index);
+startTimer();
+});
+
+dots.appendChild(dot);
+
+});
+
+function startTimer(){
+
+clearInterval(timer);
+
+if(!isPaused){
+
+timer = setInterval(()=>{
+showSlide(currentSlide + 1);
+},3000);
+
+}
+
+}
+
+document.getElementById("previousSlide")
+.addEventListener("click",()=>{
+showSlide(currentSlide - 1);
+startTimer();
+});
+
+document.getElementById("nextSlide")
+.addEventListener("click",()=>{
+showSlide(currentSlide + 1);
+startTimer();
+});
+
+pauseButton.addEventListener("click",()=>{
+
+isPaused = !isPaused;
+
+pauseButton.textContent =
+isPaused ? "Play" : "Pause";
+
+if(isPaused){
+
+clearInterval(timer);
+
+}else{
+
+startTimer();
+
+}
+
+});
+
+showSlide(0);
+startTimer();
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
     <style>
         :root {
             --navy: #0a1f3d;
