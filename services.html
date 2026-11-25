@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +23,7 @@ section{padding:76px 0}.heading{text-align:center;margin-bottom:38px}.heading sp
 .standards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.standard{background:var(--pale);padding:22px 15px;text-align:center;border-radius:7px}.standard h3{color:var(--navy);font-size:15px}.standard p{font-size:12px;color:var(--muted)}
 .contact{background:linear-gradient(#06172fee,#06172fee),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85') center/cover;text-align:center;color:#fff}.contact h2{font-size:clamp(28px,4vw,42px);margin:10px 0}.contact p{color:#dbe3ec;max-width:700px;margin:auto}.contact-info{margin-top:22px;line-height:2}.contact-info a{color:var(--gold)}
 footer{background:#040f20;color:#fff;padding:45px 0 18px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:25px}.foot h3{color:var(--gold);margin-bottom:12px;font-size:16px}.foot p,.foot a,.foot li{font-size:13px;color:#c6d0dc}.foot ul{list-style:none}.foot li{margin:6px 0}.foot a:hover{color:var(--gold)}.footbrand{display:flex;align-items:center;gap:12px;margin-bottom:12px}.footbrand img{width:65px;height:65px;object-fit:contain;background:#fff;border-radius:50%}.copy{border-top:1px solid #ffffff25;margin-top:30px;padding-top:17px;text-align:center;font-size:12px;color:#9eacbd}
-@media(max-width:900px){.menu{display:block}.links{display:none;position:absolute;top:92px;left:0;width:100%;background:var(--navy);padding:20px 5%;flex-direction:column;align-items:flex-start}.links.open{display:flex}.hero-grid{grid-template-columns:1fr;padding:55px 0}.hero-photo{max-height:420px}.cards{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px}.hero-grid{grid-template-columns:1fr;padding:55px 0}.hero-photo{max-height:420px}.cards{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.top .wrap{justify-content:center;text-align:center}.brand img{width:58px;height:58px}.brand strong{font-size:16px}.brand small{font-size:9px}.quick-grid{grid-template-columns:repeat(2,1fr)}.cards,.armed-grid,.steps{grid-template-columns:1fr}.standards-grid{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:1fr}.hero-grid{min-height:auto}.hero-photo{max-height:340px}}
 </style>
 </head>
@@ -32,6 +31,8 @@ footer{background:#040f20;color:#fff;padding:45px 0 18px}.foot{display:grid;grid
 <div class="top"><div class="wrap"><span>Facility &amp; Asset Protection · Papua New Guinea</span><span><a href="tel:+67573475422">(675) 7347 5422</a> · <a href="mailto:ismaelkaru@gmail.com">ismaelkaru@gmail.com</a></span></div></div>
 <header><div class="wrap nav">
 <a class="brand" href="#home"><img src="assets/romanien-logo.jpg" alt="Romanien Protection Limited original crest"><span><strong>ROMANIEN PROTECTION LIMITED</strong><small>FACILITY, ASSET &amp; PROTECTIVE SECURITY · PNG</small></span></a>
+<nav class="links" id="links"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Security Services</a><a href="#armed">Armed Escort</a><a href="#process">Our Method</a><a href="#contact">Contact</a></nav>
+</div></header>
 <main>
 <section class="hero" id="home"><div class="wrap hero-grid"><div><span class="eyebrow">Professional Security Services</span><h1>Protection Built Around <em>Your Risk.</em></h1><p>Romanien Protection Limited provides professional facility, asset, protective-operation and technology-supported security services tailored to client requirements throughout Papua New Guinea.</p><div class="actions"><a class="btn red" href="#contact">Request a Quote</a><a class="btn outline" href="#services">Explore Services</a></div></div><img class="hero-photo" src="assets/armed-escort-officer.png" alt="Illustrative front-facing security officer in protective armour"></div></section>
 <div class="quick"><div class="wrap quick-grid"><div><strong>Facility</strong><span>Site Protection</span></div><div><strong>Protective</strong><span>Operations</span></div><div><strong>Technology</strong><span>Enabled Security</span></div><div><strong>24/7</strong><span>Response Capability</span></div></div></div>
@@ -59,9 +60,7 @@ footer{background:#040f20;color:#fff;padding:45px 0 18px}.foot{display:grid;grid
 <div><h3>Contact</h3><ul><li><a href="tel:+67573475422">(675) 7347 5422</a></li><li><a href="mailto:ismaelkaru@gmail.com">ismaelkaru@gmail.com</a></li><li>Lae 411, Morobe Province</li><li>Papua New Guinea</li></ul></div>
 </div><div class="copy">© 2026 Romanien Protection Limited. All rights reserved. · Performance · Uncompromising Standards</div></div></footer>
 <script>
-const menu=document.getElementById('menu'),links=document.getElementById('links');
-menu.addEventListener('click',()=>links.classList.toggle('open'));
-links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+/* Navigation remains visible; no mobile menu button is used. */
 </script>
 </body>
-</html>
+                                                                                                                                         </html>
